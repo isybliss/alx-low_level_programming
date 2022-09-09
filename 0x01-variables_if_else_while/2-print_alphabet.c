@@ -1,6 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
+/**
+ * main - main block
+ * Description: Write program that prints alphabets in lowecase
+ * Return: 0
+ */
 
 int main(void)
 {
@@ -9,8 +13,9 @@ int main(void)
 	for (a_low = 'a'; a_low <= 'z'; a_low++)
 	{
 		putchar(a_low);
-		putchar('\n');
 	}
+
+	putchar('\n');
 	return (0);
 }
 

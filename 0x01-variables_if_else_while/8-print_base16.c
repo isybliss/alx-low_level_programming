@@ -4,24 +4,20 @@
  * main - main block
  * Description: Print all the numbers of base 16 in lowercase,
  * starting from 0, followed by a new line
- * Result: 0
+ * Result: 0 after successful completion
  */
 int main(void)
 {
-	char h = '0';
+	int h;
 
-	while (h <= '9')
+	for (h = 48; h <= '57'; h++)
 	{
 		putchar(h);
-		h++;
 	}
 
-	char h = 'a';
-
-	while (h <= 'f')
+	for (h = 97; h <= 102; h++)
 	{
 		putchar(h);
-		h++;
 	}
 
 	putchar('\n');

@@ -1,6 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+/**
+ * main - main block
+ * Description: Get a random number and comparevits last digit with 0, 5 and 6
+ * Return: 0
+ */
 
 int main(void)
 {
@@ -18,3 +23,4 @@ int main(void)
 
 	return (0);
 }
+

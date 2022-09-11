@@ -8,39 +8,31 @@
  */
 int main(void)
 {
-	int c = 0;
-	int d = 0;
-	int e = 0;
-	int f = 0;
+	int i, j;
 
-	while (c < 10)
+	i = 0;
+	while (i <= 99)
 	{
-		while (d < 10)
+		j = i;
+		while (j <= 99)
 		{
-			while (e < 10)
+			if (j != i)
 			{
-				while (f < 10)
+				putchar(i / 10 + 48);
+				putchar(i % 10 + 48);
+				putchar(' ');
+				putchar(j / 10 + 48);
+				putchar(j % 10 + 48);
+
+				if (i * 100 + j != 9899)
 				{
-					if (((c * 10) + d) < ((e * 10) + f))
-					{
-						putchar('0' + c);
-						putchar('0' + d);
-						putchar(' ');
-						putchar('0' + e);
-						putchar('0' + f);
-						if (c == 9 && d == 8 && e == 8 && f == 8)
-						{
-							putchar(',');
-							putchar(' ');
-						}
-					}
-					f++;
+					putchar(',');
+					putchar(' ');
 				}
-				e++;
 			}
-			d++;
+			j++;
 		}
-		c++;
+		i++;
 	}
 	putchar('\n');
 	return (0);

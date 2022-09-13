@@ -1,6 +1,6 @@
-nclude "main.h"
+#include "main.h"
 /**
- * main - function that prints the alphabets in lowercase,
+ * print_alphabet - function that prints the alphabets in lowercase,
  * followed by a new line.
  * Return: 0
  */

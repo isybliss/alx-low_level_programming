@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 
 /**
  * main - calculate largest prime of 612852475143
@@ -8,9 +9,10 @@
 int main(void)
 {
 	long int x = 612852475143;
+	double square = sqrt(x);
 	long a, maxf;
 
-	for (a = 2; a < x; a++)
+	for (a = 1; a <= square; a++)
 	{
 		if (x % a == 0)
 		{

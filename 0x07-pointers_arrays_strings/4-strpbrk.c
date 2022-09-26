@@ -18,7 +18,7 @@
 		{
 			if (s[i] == accept[k])
 			{
-				return (s[i]);
+				return (&s[i]);
 			}
 		}
 	}

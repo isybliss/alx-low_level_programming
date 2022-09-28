@@ -7,7 +7,7 @@
  * Return: square root of the number
  */
 
-int _sqr_recursion(int n)
+int _sqrt_recursion(int n)
 {
 	if (n == 0)
 		return (0);
@@ -30,5 +30,5 @@ int sqrt_check(int i, int n)
 		return (-1);
 	if ((i * i) == n)
 		return (i);
-	return(sqrt_check(i + 1, n));
-}	
+	return (sqrt_check(i + 1, n));
+}

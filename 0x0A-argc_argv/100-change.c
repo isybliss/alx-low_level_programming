@@ -47,6 +47,6 @@ int main(int argc, char *argv[])
 		amount %= cent;
 	}
 
-	printf("%d\n", result);
+	printf("%d\n", coin);
 	return (0);
 }

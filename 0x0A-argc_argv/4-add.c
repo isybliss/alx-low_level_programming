@@ -1,7 +1,9 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
 
 /**
- * main - prints the name of a program, followed by new line
+ * main - adds positive numbers, followed by new line
  * @argc: number of argument passed to the program
  * @argv: pointer to array that holds the strings
  * passed to the program
@@ -13,7 +15,7 @@ int main(int argc, char *argv[])
 {
 	int i, num, sum = 0;
 
-	for(i = 1; i < argc; i++)
+	for (i = 1; i < argc; i++)
 	{
 		for (num = 0; argv[i][num]; num++)
 		{
@@ -26,9 +28,9 @@ int main(int argc, char *argv[])
 
 		sum += atoi(argv[i]);
 	}
-	
-	printf("%d\n", sum)
 
-        return (0);
+	printf("%d\n", sum);
+
+	return (0);
 }
 

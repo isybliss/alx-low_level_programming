@@ -13,7 +13,7 @@ char *_strdup(char *str)
 {
 	char *alloc_mem;
 	unsigned int i;
-	unsigned str_l;
+	unsigned int str_l;
 
 	if (str == NULL)
 		return (NULL);
@@ -26,7 +26,7 @@ char *_strdup(char *str)
 	if (alloc_mem == NULL)
 		return (NULL);
 
-	for (i = 0; i < str_l; i++)
+	for (i = 0; i <= str_l; i++)
 		alloc_mem[i] = str[i];
 
 	return (alloc_mem);

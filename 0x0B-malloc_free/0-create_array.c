@@ -1,5 +1,5 @@
 #include "main.h"
-#include <srdlib.h>
+#include <stdlib.h>
 
 /**
  * create_array - creates an array of characters

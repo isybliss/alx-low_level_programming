@@ -10,25 +10,25 @@
  * Return: pointer to concatenated string or NULL
  */
 
-char *string_nconcat(char *s1, char*s2, unsigned int n)
+char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *ptr;
 	unsigned int len, i, j;
 
-	if(s1 == NULL)
+	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
-	
+
 	i = 0;
 	while (s1[i])
 		i++;
 	j = 0;
-	while(s[j])
+	while (s2[j])
 		j++;
 
-	 if (n < 0)
-                return (NULL);
+	if (n < 0)
+		return (NULL);
 	if (n >= j)
 		n = j;
 
@@ -40,9 +40,9 @@ char *string_nconcat(char *s1, char*s2, unsigned int n)
 
 	for (i = 0; s1[i] != '\0'; i++)
 		ptr[i] = s1[i];
-	for (j = 0; j < num; j++)
+	for (j = 0; j < n; j++)
 		ptr[i + j] = s2[j];
 
 	ptr[i + j] = '\0';
-	return (ar);
+	return (ptr);
 }

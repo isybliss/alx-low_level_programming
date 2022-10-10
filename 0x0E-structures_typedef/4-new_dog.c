@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include "dog.h"
 
+
 int _strlen(char *str);
 char *_strcpy(char *dest, char *src);
 /**
@@ -40,8 +41,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 
-	my_dog->name = strcpy(my_dog->name, name);
-	my_dog->owner = strcpy(my_dog->owner, owner);
+	my_dog->name = _strcpy(my_dog->name, name);
+	my_dog->owner = _strcpy(my_dog->owner, owner);
 	my_dog->age = age;
 
 	return (my_dog);

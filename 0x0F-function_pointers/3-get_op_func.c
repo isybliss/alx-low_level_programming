@@ -3,7 +3,7 @@
 #include <string.h>
 
 /**
- * get_op_fun - selects correct function to perform based on @s
+ * get_op_func - selects correct function to perform based on @s
  * @s: the operator
  * Return: The pointer to the operator's function
  * or NULL

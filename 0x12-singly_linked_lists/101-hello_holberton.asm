@@ -11,5 +11,5 @@ _start:	mov rax, 1
 	syscall
 
 	section .data
-msg: db "Hello, Holberton", 10
+msg: db "Hello, Holberton", 0x0a
 msglen: equ $ - msg

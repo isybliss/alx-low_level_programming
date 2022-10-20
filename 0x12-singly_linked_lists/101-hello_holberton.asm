@@ -1,7 +1,7 @@
-	global _start
+	global main
 
 	section .text
-_start:	mov rax, 1
+main:	mov rax, 1
 	mov rdi, 1
 	mov rsi, msg
 	mov rdx, msglen
@@ -11,5 +11,5 @@ _start:	mov rax, 1
 	syscall
 
 	section .data
-msg: db "Hello, Holberton", 0x0a
+msg: db "Hello, Holberton", 10
 msglen: equ $ - msg

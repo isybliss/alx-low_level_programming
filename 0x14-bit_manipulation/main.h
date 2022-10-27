@@ -1,6 +1,7 @@
 #ifndef MAIN_H_
 #define MAIN_H_
 
+#include <unistd.h>
 #include <stdio.h>
 
 int _putchar(char c);

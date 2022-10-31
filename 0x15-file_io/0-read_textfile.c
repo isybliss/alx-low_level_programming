@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * read_text - read a text file and write it to stdout
+ * read_textfile - read a text file and write it to stdout
  * @filename: file to read and write
  * @letters: number of letters to read and write
  *
@@ -13,7 +13,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	int fd, y, i;
 	char *buf;
 
-	if(!filename)
+	if (!filename)
 		return (0);
 
 	fd = open(filename, O_RDONLY);

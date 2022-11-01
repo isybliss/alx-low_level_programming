@@ -2,8 +2,8 @@
 
 /**
  * main - copy the content of file_from to file_to
- * @argc: number of argument passed to the program
- * @argv: array of arrguments
+ * @ac: number of argument passed to the program
+ * @av: array of arrguments
  *
  * Return: Always 0.
  */

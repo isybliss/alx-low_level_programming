@@ -8,36 +8,36 @@
 
 list_t *add_node_end(list_t **head, const char *str)
 {
-	list_t *temp, *temp2;
+	list_t *new_node, *last;
 	unsigned int length = 0;
 
 	if (str == NULL)
 		return (NULL);
 
-	temp = malloc(sizeof(list_t));
-	if (temp == NULL)
+	new_node = malloc(sizeof(list_t)); //allocate new node
+	if (new_node == NULL)
 		return (NULL);
 
-	temp->str = strdup(str);
-	if (temp->str == NULL)
+	new_node->str = strdup(str); // allocate string
+	if (new_node->str == NULL)
 	{
-		free(temp);
+		free(new_node);
 		return (NULL);
 	}
 	while (str[length])
 		length++;
-	temp->len = length;
-	temp->next = NULL;
+	new_node->len = length; //allocate length
+	new_node->next = NULL; //since it will be the last node
 
-	if (*head == NULL)
+	if (*head == NULL) //if it was the last node
 	{
-		*head = temp;
-		return (temp);
+		*head = new_node;
+		return (new_node);
 	}
 
-	temp2 = *head;
-	while (temp2->next)
-		temp2 = temp2->next;
-	temp2->next = temp;
-	return (temp);
+	last = *head; //if the pointer is not null
+	while (last->next) //transverse the node till it reaches the null pointer
+		last = last->next;
+	last->next = new_node;
+	return (new_node);
 }
